@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --colorBg:rgb(230, 255, 232);
+    --colorButton:rgb(23, 75, 21);
+    --colorTextFirst:rgb(17, 17, 17);
+    --colorTextSecond:rgb(141, 141, 141);
+    --radious: 10px;
+    --transition: all 0.3s linear;
+    --textHoverBtn:rgb(104, 63, 252);
+    --textHoverBg:rgb(199, 229, 250);
+}
+
+html{
+    font-size: 16px;
+    min-height: 100%;
+}
+
+body{
+    min-height: 100vh;
+}
+
+.imageSection img{
+    max-width: 300px;
+    max-height: 200px;
+    
+}
