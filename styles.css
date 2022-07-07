@@ -18,14 +18,156 @@
 html{
     font-size: 16px;
     min-height: 100%;
+    font-family:  'Arial Narrow', Arial, sans-serif;
 }
 
 body{
     min-height: 100vh;
+    background-color: var(--colorBg);
+}
+
+.centerSection{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+.titleSection{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 50px 0 70px;
+}
+
+.titleMain{
+    padding-bottom: 20px;
+    font-size: 3rem;
+    text-transform: capitalize;
+    letter-spacing: .7rem;
+}
+
+.titleSection p{
+    color: var(--colorTextSecond);
+    font-size: 1.2rem;
+}
+
+.contentsSection{  
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 2rem;
+    margin: 0 20px;
 }
 
 .imageSection img{
-    max-width: 300px;
-    max-height: 200px;
-    
+    border-radius: var(--radious);
+    width: 100%;
+    min-width: 400px;
+    height: 320px;
+    max-width: 450px;
+    object-fit: cover;
 }
+
+.tabsSection{
+    
+    background-color: white;
+    border-radius: var(--radious);
+    max-width: 450px;
+    min-width: 400px;
+    display: grid;
+    grid-template-rows: 1fr 6fr;
+}
+
+.btns{
+    display: flex;
+    min-width: 100%;
+    border-radius: var(--radious) ;
+}
+
+.btn{
+    flex-grow: 1;
+    background-color: var(--colorButton);
+    color: white;
+    border: none;
+    text-transform: capitalize;
+    font-size: 1.2rem;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.btn:hover{
+    background-color: var(--textHoverBg);
+    color: var(--textHoverBtn);
+}
+
+.btn:nth-child(1){
+    border-top-left-radius: var(--radious);
+}
+
+.btn:nth-child(3){
+    border-top-right-radius: var(--radious);
+}
+
+
+.cnx{
+    padding: 30px 20px;
+    display: none;
+}
+
+.cnx h4{
+    font-size: 1.2rem;
+    text-transform: capitalize;
+    margin-bottom: 1rem;
+}
+
+.cnx p{
+    color: var(--colorTextSecond);
+    font-size: .9rem;
+    line-height: 1.5rem;
+}
+
+.cnx ul{
+    margin-left: 20px;
+    list-style: decimal;
+}
+
+
+@media (max-width:850px) {
+    
+    .titleSection p{
+        margin: 0 20px;
+        text-align: center;
+    }
+
+    .contentsSection{
+        display: block;
+    }
+    .imageSection img{
+        min-width: 90vw;
+        padding-bottom: 25px;
+    }
+
+    .tabsSection{
+        min-width: 90vw;
+    }
+}
+
+/* 
+========================
+      ADD
+======================== */
+
+.active{
+    background-color: white;
+    color: black;
+    display: block;
+}
+.active:hover{
+    background-color: white;
+    color: black;
+}
+
+
