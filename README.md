@@ -5,4 +5,4 @@ Tabs Project with JavaScript<br>
 Demo: **[Tabs Project](https://dejanv91.github.io/13-Tabs/index.html)**
 
 ## Stack:
-* Language: **HTML5**, **CSS3**, **JavaScri
+* Language: **HTML5**, **CSS3**, **JavaScript**
